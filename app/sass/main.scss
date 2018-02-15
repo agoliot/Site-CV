@@ -1,0 +1,38 @@
+body{
+	background-color: #C0C0C0;
+}
+
+ul{
+	padding-left: 20px;
+    list-style: none;
+}
+
+.menu{
+	width: 200px;
+	height:100%;
+	transform: translateX(-150px);
+	transition: transform 1s, background-color 3s;
+    position: absolute;
+
+
+	&:hover{
+		transform: translateX(0);
+		background-color: #FFD700;
+
+	}
+
+	.portrait{
+		text-align:center;
+
+		img{
+			height:150px;
+			width:150px;
+			border-radius:50%;
+			margin-top: 30px;
+		}
+
+		.description{
+
+		}
+	}
+}
