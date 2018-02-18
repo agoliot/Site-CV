@@ -7,73 +7,431 @@
     <meta name="description" content="Mon cv">
     <meta name="author" content="Anthony Goliot">
     <title>CV - AGOLIOT</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
-
 <body>
-    <div class="menu-access">
-        <div class="button-menu">MENU</div>
+    <div id="intro">
+        <div class="overlay"></div>
+        <div class="block">
+            <h1 class="name">Anthony Goliot</h1>
+            <p class="description">Ingénieur d'études</p>
+        </div>
+        <a href="#profile" class="scroll-down"> 
+            <i class="fas fa-angle-down"></i>
+        </a>
     </div>
-    <nav class="menu" id="sideNav">
-        <span class="menu-close">
-            <i class="fa fa-times"></i>
-        </span>
-        <div class="portrait">
-            <div class="image">
-                <img src="http://www.apicius.es/wp-content/uploads/2012/07/IMG-20120714-009211.jpg" />
-            </div>
-            <div class="description">
-                <div class="front">
-                    <!-- front content -->
-                    <div class="prenom">Anthony</div>
-                    <div class="nom">GOLIOT</div>
-                </div>
-                <div class="back">
-                    <!-- back content -->
-                    <div class="emploi">Développeur </div>
-                </div>
-            </div>
+    <nav id="navigation">
+        <div class="navbar-header d-sm-none">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
-        <div>
-            <ul>
-                <li>
-                    <a href="#about">Profil</a>
-                </li>
-                <li>
-                    <a href="#experience">Formations</a>
-                </li>
-                <li>
-                    <a href="#experience">Experiences</a>
-                </li>
-                <li>
-                    <a href="#about">Compétences</a>
-                </li>
-                <li>
-                    <a href="#experience">Contact</a>
-                </li>
-            </ul>
-        </div>
+        <ul>
+            <li><a href="#profile" class="active">Profile</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#connaissances">Connaissances</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-    <div id="content-body" class="container">
-        <div class="row">
-            <div class="col-sm-10">
-                <section class="" id="about">
-                    <div>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+    <div class="background-white">
+        <div id="profile" class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h2>Profile</h2>
+                    <hr>
+                    <div class="row">
+                        <div class="text-center col-sm-6">
+                            <img class="photo" src="http://www.apicius.es/wp-content/uploads/2012/07/IMG-20120714-009211.jpg" width="200" height="200">
+                        </div>
+                        <div class="col-sm-6">
+                            <h3>Détails</h3>
+                            <p>
+                                <strong>Nom:</strong>
+                                <br> Anthony Goliot
+                                <br>
+                                <strong>Age:</strong>
+                                <br> 28 ans
+                                <br>
+                                <strong>Lieu:</strong>
+                                <br> 'Niort, France, Terre' </p>
+                        </div>
+                        <div class="col-sm-12">
+                            <p>
+                                BLA BLA
+                            </p>
+                        </div>
                     </div>
-                </section>
-                <section class="" id="experience">
-                    <div>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-                    </div>
-                </section>
-                <div>
                 </div>
             </div>
-            <script src="js/jquery-3.3.1.min.js"></script>
-            <script src="js/main.js"></script>
-</body>
+        </div>
+    </div>
+    <div class="background-belge">
+        <div id="experiences" class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h2>Expériences</h2>
+                    <p class="lead">
+                        “C'est par l'expérience que la science et l'art font leur progrès chez les hommes.”
+                        <br>- Aristote
+                    </p>
+                    <hr>
+                    <h3>Études</h3>
+                    <div class="experiences">
+                        <div class="experience row">
+                            <div class="col-md-4">
+                                <h4>Université de la Rochelle</h4>
+                                <p class="experience-period">
+                                    sep 2011 - jun 2013 </p>
+                            </div>
+                            <div class="col-md-8">
+                                <p>
+                                    <strong>Master Informatique - Ingénierie des systèmes d’information</strong>
+                                    <br/>
+                                    <span class="hidden-phone">
+                                        Approfondir mes connaissances et mettre en oeuvre des méthodes et techniques au sein d'un systeme d'information.
+                                            +
+                                        Stage de M2 : réalisé à Sopra, ce qui m'a permis d'obtenir un CDI.
 
+                                        Maîtriser la mise en œuvre des techniques et des méthodes de l’informatique au sein des organisations (méthodes orientées objet, approche par composants, services, technologies du Web, gestion de bases de données) <br/>Concevoir et développer les solutions informatiques pour améliorer le fonctionnement d’une organisation.
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="experience row">
+                            <div class="col-md-4">
+                                <h4>Université de la Rochelle</h4>
+                                <p class="experience-period">
+                                    sep 2008 - jun 2011 </p>
+                            </div>
+                            <div class="col-md-8">
+                                <p>
+                                    <strong>Licence Informatique</strong>
+                                    <br/>
+                                    <span>
+                                        Pas trop de code avant l'université, apprentissage de l'algorithmie, JAVA
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="experience row">
+                            <div class="col-md-4">
+                                <h4>Lycée Paul Guerin</h4>
+                                <p class="experience-period">
+                                    Sep 2005 - Jun 2008 </p>
+                            </div>
+                            <div class="col-md-8">
+                                <p>
+                                    <strong>Baccalauréat Scientifique - Science de l'ingénieur </strong>
+                                    <br/>
+                                    <span>
+                                        
+                                        Science de l'ingénieur. 
+                                        Programmer un robot => Faire de l'informatique
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <h3>Carrière</h3>
+                    <div class="experiences">
+                        <div class="experience row">
+                            <div class="col-md-4">
+                                <h4>Alltech</h4>
+                                <p class="experience-period">
+                                    Mars 2018 - aujourd'hui </p>
+                            </div>
+                            <div class="col-md-8">
+                                <p>
+                                    <strong>Prestation - Développeur - CEGEDIM, Smart RX</strong>
+                                    <br/>
+                                    <span>
+                                        A venir
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="experience row">
+                            <div class="col-md-4">
+                                <h4>Sopra Steria</h4>
+                                <p class="experience-period">
+                                    Jui 2013 - Fev 2018 </p>
+                            </div>
+                            <div class="col-md-8">
+                                <p>
+                                    <strong>Prestation - Développeur - MAIF</strong>
+                                    <br/>
+                                    <span>
+                                        <ul>
+                                            <li>
+                                                <i>Projet : Maison Connectée</i>
+                                                <br/>
+                                                 Développement et conception d'une application web et d'une application hybride permettant aux utilisateurs de piloter ses équipements connectées, réaliser des diagnostics, réceptions de notifications (des conseils personnalisés, enregistrement de rappels personnels et alertes météos).<br/><br/>
+                                            </li>
+                                            <li>
+                                                <i>Projet : Coach Auto</i>
+                                                <br/>
+                                                Développement et conception d'une application Android permettant à un utilisateur de réaliser un devis en photographiant une plaque d'immatriculation d'un véhicule.<br/><br/> 
+                                            </li>
+                                            
+                                            <li>
+                                                <i>Projet : Université Entreprise MAIF</i>
+                                                <br/>
+                                                   Développement, conception d’une l'application web et une l'application hybride accessible par les employés MAIF. L'application permet à l'utilisateur, en utilisant son compte employé, d’accéder à ses formations, documents, coordonnées du gestionnaire, géolocalisation.<br/><br/>
+                                            </li>
+                                        </ul>                                     
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="col-md-8 offset-md-4">
+                                <p>
+                                    <strong>Centre de Service - Sopra Steria</strong>
+                                    <br/>
+                                    <span>
+                                        Participation aux activités d’évolution du site maif.fr
+                                        <ul>
+                                            <li>
+                                                <i>Développeur - Concepteur</i>
+                                                <br/>
+                                                 Ecriture des spécifications techniques détaillées<br/>
+                                                 Développement des évolutions <br/>
+                                                 Réalisation des tests unitaires <br/>
+                                                 Ecriture et réalisation de la recette interne.<br/><br/>
+                                            </li>
+                                            <li>
+                                                <i>+ Référent Technique</i>
+                                                <br/>
+                                                Un support aux autres collaborateurs sur des problèmes de développement et de conception.
+                                                <br/>
+                                                La réalisation de devis suivant des abaques.<br/><br/> 
+                                            </li>
+                                            
+                                            <li>
+                                                <i>+ Pilote Opérationel</i>
+                                                <br/>
+                                                Suivi des collaborateurs dans les évolutions et corrections du site maif.fr<br/><br/>
+                                            </li>
+                                        </ul>                                     
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="experience row">
+                            <div class="col-md-4">
+                                <h4>Sopra Steria</h4>
+                                <p class="experience-period">
+                                    Fev 2013 - Juin 2013 </p>
+                            </div>
+                            <div class="col-md-8">
+                                <p>
+                                    <strong>Stage</strong>
+                                    <br/>
+                                    <span>
+                                        Réalisation d’une application pour l’agence de Niort pour faciliter la communication entre collaborateurs et aussi avec la structure de l’agence. L’application permet à chaque collaborateur de pourvoir de rechercher des collaborateurs en fonction de différentes technologies en cas de besoin d'expertise technique.
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="background-white">
+        <div id="connaissances" class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h2>Connaissances</h2>
+                    <p class="lead">
+                        “La connaissance s'acquiert par l'expérience, tout le reste n'est que de l'information.”
+                        <br>- Albert Einstein
+                    </p>
+                    <hr>
+                    <h3>Compétences</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>
+                                    <span class="ability-title">Java</span>
+                                    <span class="ability-score">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="ability-title">Javascript</span>
+                                    <span class="ability-score">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="ability-title">AngularJS</span>
+                                    <span class="ability-score">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="ability-title">JQuery</span>
+                                    <span class="ability-score">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="ability-title">HTML(5) / CSS(3)</span>
+                                    <span class="ability-score">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="ability-title">Scrum</span>
+                                    <span class="ability-score">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="ability-title">JSON</span>
+                                    <span class="ability-score">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="ability-title">Bootstrap</span>
+                                    <span class="ability-score">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="ability-title">MySQL</span>
+                                    <span class="ability-score">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="ability-title">SASS / SCSS</span>
+                                    <span class="ability-score">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <h3>Langues</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="no-bullets">
+                                <li>
+                                    <span class="ability-title">Français</span>
+                                    <span class="ability-score">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="ability-title">Anglais</span>
+                                    <span class="ability-score">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="background-gray">
+        <div id="contact" class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h2>Contact</h2>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>
+                                    <a href="http://linkedin.nl/in/anthony-goliot/" target="_blank">
+                                        <i class="fab fa-linkedin-in"></i>
+                                        http://linkedin.nl/in/anthony-goliot/                
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:goliot.anthony@gmail.com">
+                                        <i class="fas fa-at"></i>
+                                        <span>goliot.anthony@gmail.com</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>
+                                    <a href="https://github.com/agoliot" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                        https://github.com/agoliot             
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+</body>
 </html>
