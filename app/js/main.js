@@ -41,9 +41,9 @@ $(document).ready(function () {
 });
 
 function onScroll(event) {
-    //position dans l'ecan
+    // Position dans l'ecan
     var scrollPos = $(document).scrollTop();
-    //Taille de la fenetre
+    // Taille de la fenetre
     var heightWindow = $(window).height();
     // Taille de la page
     var heightPage = $(document).height();
